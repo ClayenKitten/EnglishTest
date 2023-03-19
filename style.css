@@ -1,0 +1,101 @@
+:root {
+    --button-size: 50px;
+    --nav-padding: 25px;
+}
+
+body {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+
+    background-color: #DDD;
+}
+
+nav {
+    flex: 0 1 content;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+
+    box-sizing: border-box;
+    background-color: #222;
+    height: 100vh;
+    padding: var(--nav-padding);
+}
+
+nav > button {
+    width: var(--button-size);
+    height: var(--button-size);
+    border: 0;
+    border-radius: 5px;
+    text-align: center;
+    font-size: larger;
+}
+
+nav > button.visited {
+    color: #DDDDDD;
+    background-color:  #002f4f;
+}
+
+nav > button.selected {
+    color: white;
+    background-color:  #0074D9;
+}
+
+main {
+    flex: 1 1 content;
+    display: flex;
+    height: 100vh;
+    background-color: black;
+}
+
+main video {
+    width: 100%;
+    max-height: 100vh;
+}
+
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+
+    box-sizing: border-box;
+    margin: 0;
+    border: 0;
+    padding: 25px;
+
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#modal > div {
+    background-color: white;
+    min-width: 40vw;
+
+    padding: 25px;
+    border: black solid 1px;
+    border-radius: 5px;
+}
+
+#modal > div > p {
+    font-size: larger;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: default;
+}
