@@ -12,8 +12,8 @@ const DATA = [
         video: "2.mp4"
     },
     {
-        name: "",
-        answer: "",
+        name: "Baahubali 2: The Conclusion (2017)",
+        answer: "India",
         video: "3.mp4",
     },
     {
