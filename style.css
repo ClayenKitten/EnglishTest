@@ -85,21 +85,13 @@ main video {
 
 #modal > div {
     background-color: white;
-    min-width: 40vw;
 
+    text-align: center;
     padding: 25px;
     border: black solid 1px;
-    border-radius: 5px;
+    border-radius: 25px;
 }
 
 #modal > div > p {
     font-size: larger;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-    cursor: default;
 }

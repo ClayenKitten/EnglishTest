@@ -73,8 +73,8 @@ function ToggleAnswer() {
     } else {
         let movie = DATA[current];
         let content = modal.children[0];
-        content.children[1].innerText = movie.answer;
-        content.children[2].innerHTML = `Fragment from <i>${movie.name}</i>`;
+        content.children[0].innerText = movie.answer;
+        content.children[1].innerHTML = `Fragment from <i>${movie.name}</i>`;
         
         modal.style.display = "flex";
     }
