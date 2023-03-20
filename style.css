@@ -12,22 +12,26 @@ body {
     background-color: #DDD;
 }
 
-nav {
-    flex: 0 1 content;
+#nav-container {
+    flex: 0 0 100px;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    background-color: #222;
+    overflow-y: auto;
+}
+
+#nav {
+    box-sizing: border-box;
+    padding: var(--nav-padding);
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 25px;
-
-    box-sizing: border-box;
-    background-color: #222;
-    height: 100vh;
-    padding: var(--nav-padding);
 }
 
 nav > button {
+    flex: 0 0 auto;
     width: var(--button-size);
     height: var(--button-size);
     border: 0;
