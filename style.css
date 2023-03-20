@@ -1,6 +1,6 @@
 :root {
     --button-size: 50px;
-    --nav-padding: 25px;
+    --padding: 25px;
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 
 #nav {
     box-sizing: border-box;
-    padding: var(--nav-padding);
+    padding: var(--padding);
 
     display: flex;
     flex-direction: column;
@@ -78,7 +78,7 @@ main video {
     box-sizing: border-box;
     margin: 0;
     border: 0;
-    padding: 25px;
+    padding: var(--padding);
 
     background-color: rgba(0, 0, 0, 0.4);
 }
@@ -87,7 +87,7 @@ main video {
     background-color: white;
 
     text-align: center;
-    padding: 25px;
+    padding: var(--padding);
     border: black solid 1px;
     border-radius: 25px;
 }
